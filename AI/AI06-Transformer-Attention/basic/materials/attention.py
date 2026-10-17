@@ -1,3 +1,5 @@
+# source .venv/bin/activate 激活虚拟环境
+# deactivate                取消激活
 # 运行：python attention.py
 import numpy as np
 
