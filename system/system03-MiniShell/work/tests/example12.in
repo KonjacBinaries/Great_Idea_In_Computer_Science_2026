@@ -1,0 +1,9 @@
+echo nonempty > a.txt
+echo > a.txt
+touch a.txt
+cat a.txt
+echo > b.txt
+cat b.txt
+echo a>b
+echo -n literal
+ls

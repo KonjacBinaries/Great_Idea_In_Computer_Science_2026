@@ -1,0 +1,9 @@
+
+   
+   echo    alpha	 beta   
+touch empty
+cat empty
+exit extra
+pwd
+exit
+echo ignored

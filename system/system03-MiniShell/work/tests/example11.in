@@ -1,0 +1,21 @@
+touch Z
+touch A
+touch _
+touch -
+touch 0
+touch .hidden
+touch ...
+touch 中文
+touch name@
+touch a/b
+touch a:b
+touch .
+touch ..
+cat missing
+ls
+pwd extra
+touch extra one
+cat A extra
+ls extra
+pwd
+exit

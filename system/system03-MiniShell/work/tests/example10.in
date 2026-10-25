@@ -1,0 +1,14 @@
+echo kept > keep.txt
+echo overwrite > keep.txt extra
+cat keep.txt
+echo bad > fresh extra
+cat fresh
+echo >
+echo bad > keep.txt > other.txt
+cat keep.txt
+echo bad > a/b
+echo bad > .
+echo bad > ..
+echo bad > >
+ls
+exit
