@@ -42,7 +42,7 @@ Status Execute() {
     std::istringstream sstr(command_line);
     std::vector<std::string> command; command.clear();
     if (!(sstr >> command_code)) {
-        return Status::CONTINUE;
+        return Status::EXIT;
     } // The command is empty.
     while (sstr >> temp) {
         command.push_back(temp);
