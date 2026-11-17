@@ -2,12 +2,15 @@
 #include <string>
 #include <vector>
 #include <sstream>
+#include <map>
 
+struct Item;
 using Command = std::string;
 using Token = std::string;
 using FileContext = std::string;
 using Address = std::string;
 using TokenStream = std::vector<Token>;
+using SubItem = std::map<std::string, Item>;
 
 Token cleanToken(Token token) {
     auto rubbish_char = [](char ch)->bool {
@@ -34,10 +37,11 @@ struct Item {
 };
 struct Directory; struct File;
 struct Directory final : public Item  {
+    SubItem item{};
     
 };
 struct File final : public Item {
-    FileContext context_;
+    FileContext context_{};
 
 };
 
